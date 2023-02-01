@@ -19,6 +19,48 @@ body{
     font-family: "poppins", sans-serif !important;
 }
 
+.line-height-500 {
+    line-height: 2rem ;
+}
+
+@media (max-width: 768px) {
+
+.line-height-500 {
+    line-height: 1.7rem ;
+}
+}
+
+.line-height-600 {
+    line-height: 3rem ;
+}
+
+@media (max-width: 768px) {
+
+.line-height-600 {
+    line-height: 2.5rem ;
+}
+}
+
+.border-radius-bottom-right {
+    border-bottom-right-radius: 170px;
+}
+
+@media (max-width: 768px) {
+    .border-radius-bottom-right {
+        border-bottom-right-radius: 100px;
+    }
+}
+
+.border-radius-top-left {
+    border-top-left-radius: 170px;
+}
+
+@media (max-width: 768px) {
+    .border-radius-top-left {
+        border-top-left-radius: 100px;
+    }
+}
+
 
 .bg-primary-600 {
     background-color: var(--blue-200);
@@ -180,14 +222,13 @@ footer {
 /* Services */
 
 .service-section {
-    max-width: full;
-    background-color: var(--blue-200);
-    border-top-left-radius: 80px;
+    padding: 7rem 0rem !important;
+
 
 }
 .service-container {
     margin: auto;
-    padding: 5rem;
+    
     width: 1280px;
     display: flex;
     flex-direction: column;
@@ -208,14 +249,9 @@ footer {
 }
 
 .service-card {
-    background-color: white;
-    max-width: 300px;
-    padding: 2.5rem;
+    background-color: rgb(255, 254, 254);
+    padding: 2rem;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    
-    gap: 1rem;
 }
 .service-icon {
     width: 56px;
@@ -380,4 +416,37 @@ textarea {
     border-radius: 18px;
     
     text-align: center;
+}
+
+/* google maps */
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+  }
+
+  /* animations */
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 6s linear forwards;
+    animation: fadeinout 6s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
